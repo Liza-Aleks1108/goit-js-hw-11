@@ -14,13 +14,13 @@ export default function createMarkup(arr) {
       }) => {
         return `<li>
     <a href="${largeImageURL}">
-        <img src="${webformatURL}" alt="${tags}"/>
+        <img src="${webformatURL}" alt="${tags}" width="360" height="155"/>
     </a>
-        <ul>
-            <li>Likes ${likes}</li>
-            <li>Views ${views}</li>
-            <li>Comments ${comments}</li>
-            <li>Downloads ${downloads}</li>
+        <ul class="characteristics">
+            <li>Likes<br> <span class="span">${likes}</span></li>
+            <li>Views<br> <span class="span">${views}</span></li>
+            <li>Comments<br> <span class="span">${comments}</span></li>
+            <li>Downloads<br> <span class="span">${downloads}</span></li>
         </ul>
     </li>`;
       }
