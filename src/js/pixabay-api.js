@@ -34,7 +34,7 @@ export default function fetchData() {
       return response.json();
     })
     .then(data => {
-      console.log('data', data);
+      // console.log('data', data);
       list.insertAdjacentHTML('beforeend', createMarkup(data.hits));
 
       lightbox.refresh();

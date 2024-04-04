@@ -17,7 +17,7 @@ function handleSubmit(event) {
   event.preventDefault();
 
   if (searchInput.value.trim() === '') {
-    console.log('Empty string');
+    // console.log('Empty string');
     return;
   }
   createLoader();
