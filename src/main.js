@@ -36,9 +36,11 @@ function handleSubmit(event) {
 
   createLoader();
 
-  fetchData()
+  fetchData(searchInput.value.trim())
     .then(data => {
       // console.log('data', data);
+
+      list.innerHTML = ''; // Очищення попередніх результатів перед вставкою нових
       list.insertAdjacentHTML('beforeend', createMarkup(data.hits));
 
       lightbox.refresh();
